@@ -1,69 +1,111 @@
-packadd! dracula
-syntax enable
-colorscheme dracula
-
-" BASIC CONFIGURATION
+" Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
-filetype plugin indent on
-syntax enable
 
-set number relativenumber 		" add number
-set path+=**
-set wildmode=longest,list,full
-set encoding=UTF-8
+" Enable type file detection. Vim will be able to try to detect the type of file in use.
+filetype on
+
+" Enable plugins and load plugin for the detected file type.
+filetype plugin on
+
+" Load an indent file for the detected file type.
+filetype indent on
+
+" Turn syntax highlighting on.
+syntax on
+
+" Add numbers to each line on the left-hand side.
+set number
+
+" Highlight cursor line underneath the cursor horizontally.
 set cursorline
-set showmatch 				" showing matching breckets
-set linebreak
-set ignorecase				" Do case insensitive matching
-set smartcase				" Do smart case matching
-set clipboard+=unnamedplus		" Use system clipboard. If 'unnamedplus' doesn't work, try 'unnamed'.
-" set mouse=a				" enable mouse
-set tabstop=4
+
+" Highlight cursor line underneath the cursor vertically.
+set cursorcolumn
+
+" Set shift width to 4 spaces.
 set shiftwidth=4
-set softtabstop=4
-set spelllang=en_us			" Default language for spell checker
-set fillchars
 
-" BASIC STYLING
-highlight Comment cterm=italic
-highlight CursorLine ctermbg=black cterm=NONE
-highlight CursorLineNr ctermbg=White cterm=bold ctermfg=gray
-highlight LineNr ctermbg=White ctermfg=Black
+" Set tab width to 4 columns.
+set tabstop=4
 
-highlight SpellBad ctermbg=Red ctermfg=White
-highlight SpellCap ctermbg=NONE ctermfg=NONE
-highlight SpellRare ctermbg=NONE ctermfg=NONE
-highlight SpellLocal cterm=Underline ctermfg=NONE
+" Use space characters instead of tabs.
+set expandtab
 
-" BASIC KEY BINDING
-" Remap Esc Key
-inoremap ;; <Esc>
+" Do not save backup files.
+set nobackup
 
-" Map Leader Key
-let mapleader=";"
+" Do not let cursor scroll below or above N number of lines when scrolling.
+set scrolloff=10
 
-" Swap current line with lower line
-map <leader>x ddp
+" Do not wrap lines. Allow long lines to extend as far as the line goes.
+set nowrap
 
-" Toggle spellchecker
-map <leader>s :setlocal spell!<CR>
+" While searching though a file incrementally highlight matching characters as you type.
+set incsearch
 
-" Enable and disable auto indent
-map <leader>a :setlocal autoindent<CR>
-map <leader>A :setlocal noautoindent<CR>
+" Ignore capital letters during search.
+set ignorecase
 
-" Enable and disable auto comment
-map <leader>c :setlocal formatoptions-=cro<CR>
-map <leader>C :setlocal formatopsions=cro<CR>
+" Override the ignorecase option if searching for capital letters.
+" This will allow you to search specifically for capital letters.
+set smartcase
 
-" PLUGINS
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" Show partial command you type in the last line of the screen.
+set showcmd
 
-Plugin 'VundleVim/Vundle.vim'				" Required to work properly
+" Show the mode you are on the last line.
+set showmode
 
-" add powerline on vim
-set  rtp+=/home/adam/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh
-set laststatus=2
-set t_Co=256
+" Show matching words during a search.
+set showmatch
 
+" Use highlighting when doing a search.
+set hlsearch
+
+" Set the commands to save in history default number is 20.
+set history=1000
+
+" Enable auto completion menu after pressing TAB.
+set wildmenu
+
+" Make wildmenu behave like similar to Bash completion.
+set wildmode=list:longest
+
+" There are certain files that we would never want to edit with Vim.
+" Wildmenu will ignore files with these extensions.
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+
+
+" PLUGINS ---------------------------------------------------------------- {{{
+
+" Plugin code goes here.
+
+" }}}
+
+
+" MAPPINGS --------------------------------------------------------------- {{{
+
+" Mappings code goes here.
+
+" }}}
+
+
+" VIMSCRIPT -------------------------------------------------------------- {{{
+
+" This will enable code folding.
+" Use the marker method of folding.
+augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+augroup END
+
+" More Vimscripts code goes here.
+
+" }}}
+
+
+" STATUS LINE ------------------------------------------------------------ {{{
+
+" Status bar code goes here.
+
+" }}}
