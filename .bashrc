@@ -116,6 +116,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# startship bash
+eval "$(starship init bash)"
+
 # display system info 
 neofetch
 
