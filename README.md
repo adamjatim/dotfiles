@@ -6,6 +6,7 @@ My linux config setup
 
 -  **OS** - Debian
 -  **Window Manager** - i3
+-  **Compositor** - Picom
 -  **Panel** - i3 bar/panel & bumblebee status
 -  **Launcher** - Rofi
 -  **File Manager** - Thunar
