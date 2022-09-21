@@ -16,4 +16,4 @@ My linux config setup
 
 ## SCREENSHOTS
 
-![adamjatim](https://raw.githubusercontent.com/adamjatim/dotfiles/main/Screenshots.png)ss
+![adamjatim](https://raw.githubusercontent.com/adamjatim/dotfiles/main/Screenshots.png)
