@@ -12,3 +12,37 @@ new_window 1pixel
 gaps inner 8
 gaps outer 4
 
+set $hc-color #FFFFFF
+set $bg-color #262626
+set $sc-color #FFFFFF
+set $fg-color #FFFFFF
+# Black + DarkGrey
+set $color0   #262626
+set $color8   #928374
+# DarkRed + Red
+set $color1   #cc241d
+set $color9   #fb4934
+# DarkGreen + Light Green
+set $color2   #98971a
+set $color10  #b8bb26
+# DarkYellow + Yellow
+set $color3   #d79921
+set $color11  #fabd2f
+# DarkBlue + Blue
+set $color4   #458588
+set $color12  #83a598
+# DarkMagenta + FFFFFF
+set $color5   #b16286
+set $color13  #d3869b
+# DarkCyan + Cyan
+set $color6   #689d6a
+set $color14  #8ec07c
+# LightGrey + White
+set $color7   #a89984
+set $color15  #ebdbb2
+# Border
+set $color16 #404040
+
+set $borderInactive #403a37
+set $borderActive   #504945
+

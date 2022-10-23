@@ -44,13 +44,21 @@ ctrl + alt + s
 
 
 #Brigtness Keybindings
+
 XF86MonBrightnessUp 
         brightnessctl set +5%
 
 XF86MonBrightnessDown 
         brightnessctl set 5%-
 
+# Redshift Keybindings
+# for dark mode
 
+super + x
+    redshift -x
+
+super + c
+    redshift -P -O 3000
 
 #Audio Keybindings
 

@@ -4,6 +4,7 @@
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 # nitrogen --restore; sleep 1; 
 feh --bg-fill ~/.config/backgrounds/sipaling-aestethics.png &
+#feh --bg-fill ~/.config/backgrounds/Benjamin-Franklin-cp6ameo.png &
 picom -b &
 numlockx on &
 nm-applet &
