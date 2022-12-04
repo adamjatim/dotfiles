@@ -34,7 +34,7 @@ alt + p
 # Application Keybindings
 
 super + w
-    firefox-esr
+    firefox
 
 super + d 
  discord
