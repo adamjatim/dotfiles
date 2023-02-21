@@ -5,7 +5,7 @@ My linux config setup
 ## INFO
 
 -  **OS** - Debian
--  **Window Manager** - i3
+-  **Window Manager** - i3-gaps [archive]
 -  **Compositor** - Picom
 -  **Panel** - i3 bar/panel & bumblebee status
 -  **Launcher** - Rofi
