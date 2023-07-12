@@ -4,7 +4,7 @@ My linux config setup
 
 ## INFO
 
--  **OS** - Debian
+-  **OS** - Debian 11
 -  **Window Manager** - i3-gaps [archive]
 -  **Compositor** - Picom
 -  **Panel** - i3 bar/panel & bumblebee status
